@@ -78,14 +78,17 @@ func getPartInfo(prt string) part.Part {
 				p.Datasheets = append(p.Datasheets, das)
 			}
 			fmt.Println("Searching alternatives...")
-			alts := doc.Find("table", "class", "part-suggestions").Find("tbody").FindAll("tr")
-			for _, a := range alts {
-				link := a.Find("td", "class", "td-col-1")
-				if link.Error == nil {
-					linkT := link.Find("a").Text()
-					p.Alternatives = append(p.Alternatives, strings.TrimSpace(linkT))
-				}
+			alts := doc.Find("table", "class", "part-suggestions")
+			if alts.Error == nil {
+				alt := alts.Find("tbody").FindAll("tr")
+				for _, a := range alt {
+					link := a.Find("td", "class", "td-col-1")
+					if link.Error == nil {
+						linkT := link.Find("a").Text()
+						p.Alternatives = append(p.Alternatives, strings.TrimSpace(linkT))
+					}
 
+				}
 			}
 		}
 	}
