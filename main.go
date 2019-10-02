@@ -29,12 +29,14 @@ func getPartInfo(prt string) part.Part {
 	var p part.Part
 	p.Partnumber = prt
 
+	fmt.Println("Scraping...")
 	url := fmt.Sprintf("https://www.findchips.com/lite/%s", prt)
 	resp, _ := soup.Get(url)
 	doc := soup.HTMLParse(resp)
 
 	dists := []string{"Mouser", "Farnel", "Digi-Key", "Avnet", "TTI", "RS"}
 
+	fmt.Println("Searching distributors")
 	res := doc.FindAll("div", "class", "distributor-results")
 	for _, r := range res {
 		distributor := r.Find("h3", "class", "distributor-title").FullText()
@@ -43,6 +45,7 @@ func getPartInfo(prt string) part.Part {
 		if contains(distributor, dists) {
 			var dist part.Distributor
 			dist.Name = distributor
+			fmt.Printf("\tFound %s \n", distributor)
 			distPartNos := r.FindAll("tr", "class", "row")
 			for _, dpn := range distPartNos {
 				var pn part.Partnumber
@@ -54,7 +57,7 @@ func getPartInfo(prt string) part.Part {
 			p.Distributors = append(p.Distributors, dist)
 		}
 	}
-
+	fmt.Println("Searching details...")
 	det := doc.FindAll("a", "class", "sub-header-item")
 	for _, d := range det {
 		if strings.Contains(d.Attrs()["href"], "detail") {
@@ -68,12 +71,21 @@ func getPartInfo(prt string) part.Part {
 				par.Val = strings.TrimSpace(d.Find("p").Text())
 				p.Parameters = append(p.Parameters, par)
 			}
-			ds := doc.Find("div", "class", "datasheet-item").Find("a").Attrs()["href"]
-			p.Datasheets = append(p.Datasheets, ds)
+			fmt.Println("Searching datasheets...")
+			ds := doc.Find("div", "class", "datasheet-item")
+			if ds.Error == nil {
+				das := ds.Find("a").Attrs()["href"]
+				p.Datasheets = append(p.Datasheets, das)
+			}
+			fmt.Println("Searching alternatives...")
 			alts := doc.Find("table", "class", "part-suggestions").Find("tbody").FindAll("tr")
 			for _, a := range alts {
-				link := a.Find("td", "class", "td-col-1").Find("a")
-				p.Alternatives = append(p.Alternatives, strings.TrimSpace(link.Text()))
+				link := a.Find("td", "class", "td-col-1")
+				if link.Error == nil {
+					linkT := link.Find("a").Text()
+					p.Alternatives = append(p.Alternatives, strings.TrimSpace(linkT))
+				}
+
 			}
 		}
 	}
