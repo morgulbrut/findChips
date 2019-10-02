@@ -26,17 +26,19 @@ func contains(input string, words []string) bool {
 
 func getPartInfo(prt string) part.Part {
 
+	//TODO: refactor to smaller functions, error handling
+
 	var p part.Part
 	p.Partnumber = prt
 
-	fmt.Println("Scraping...")
+	dists := []string{"Mouser", "Farnell", "Digi-Key", "Avnet", "TTI", "RS"}
+
+	fmt.Printf("Scraping...\n")
 	url := fmt.Sprintf("https://www.findchips.com/lite/%s", prt)
 	resp, _ := soup.Get(url)
 	doc := soup.HTMLParse(resp)
 
-	dists := []string{"Mouser", "Farnel", "Digi-Key", "Avnet", "TTI", "RS"}
-
-	fmt.Println("Searching distributors")
+	fmt.Printf("Searching for %s...\n", dists)
 	res := doc.FindAll("div", "class", "distributor-results")
 	for _, r := range res {
 		distributor := r.Find("h3", "class", "distributor-title").FullText()
