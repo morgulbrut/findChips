@@ -30,8 +30,12 @@ type Part struct {
 
 func PrintPart(p Part) {
 	color.Red(p.Partnumber)
-	for _, d := range p.Datasheets {
-		color.Cyan(d)
+	color.Yellow("Distributors")
+	for _, d := range p.Distributors {
+		color.Green(d.Name)
+		for _, pn := range d.Partnumbers {
+			color.Cyan("%s : %s : %s\n", pn.ManPartnumber, pn.DistPartnumber, pn.Desc)
+		}
 	}
 	color.Yellow("Details")
 	for _, p := range p.Parameters {
@@ -44,12 +48,5 @@ func PrintPart(p Part) {
 	color.Yellow("Datasheets")
 	for _, a := range p.Datasheets {
 		color.Cyan(a)
-	}
-	color.Yellow("Distributors")
-	for _, d := range p.Distributors {
-		color.Green(d.Name)
-		for _, pn := range d.Partnumbers {
-			color.Cyan("%s : %s : %s\n", pn.ManPartnumber, pn.DistPartnumber, pn.Desc)
-		}
 	}
 }
