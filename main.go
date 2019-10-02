@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"github.com/morgulbrut/findChips/part"
+	"github.com/morgulbrut/helferlein"
 	"github.com/morgulbrut/soup"
 )
 
@@ -13,15 +14,6 @@ func main() {
 	prt := os.Args[1]
 	p := getPartInfo(prt)
 	part.PrintPart(p)
-}
-
-func contains(input string, words []string) bool {
-	for _, word := range words {
-		if strings.Index(input, word) > -1 {
-			return true
-		}
-	}
-	return false
 }
 
 func getPartInfo(prt string) part.Part {
@@ -44,7 +36,7 @@ func getPartInfo(prt string) part.Part {
 		distributor := r.Find("h3", "class", "distributor-title").FullText()
 		distributor = strings.TrimSpace(distributor)
 		distributor = strings.Split(distributor, "\n")[0]
-		if contains(distributor, dists) {
+		if helferlein.Contains(distributor, dists) {
 			var dist part.Distributor
 			dist.Name = distributor
 			fmt.Printf("\tFound %s \n", distributor)
