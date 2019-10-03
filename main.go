@@ -12,26 +12,54 @@ import (
 
 func main() {
 	prt := os.Args[1]
-	p := getPartInfo(prt)
-	part.Print(p)
-	part.WriteCSV(p)
+	ps := getPartInfo(prt)
+	for _, p := range ps {
+		fmt.Println(p.Partnumber)
+	}
+	//part.Print(p)
+	//part.WriteCSV(p)
 }
 
-func getPartInfo(prt string) part.Part {
+func getPartInfo(prt string) []part.Part {
 	var p part.Part
+	var fp []part.Part
+	var pns []string
 
 	dists := []string{"Mouser", "Farnell", "Digi-Key", "Avnet", "TTI", "RS"}
-
 	doc := getDistPage(prt)
-	docDet := parseDetails(doc)
-
-	p.Partnumber = prt
 	p.Distributors = getDistributors(doc, dists)
-	p.Parameters = getParameters(docDet)
-	p.Datasheets = getDatasheets(docDet)
-	p.Alternatives = getAlternatives(docDet)
 
-	return p
+	// get candidates for parts
+	for _, d := range p.Distributors {
+		for _, pn := range d.Partnumbers {
+			if !helferlein.StringInSlice(pn.ManPartnumber, pns) {
+				pns = append(pns, pn.ManPartnumber)
+			}
+		}
+	}
+
+	fmt.Printf("%v\n", pns)
+	for _, pn := range pns {
+
+		fmt.Println(pn)
+
+		doc := getDistPage(pn)
+		if doc.Error == nil {
+			p.Partnumber = pn
+			p.Distributors = getDistributors(doc, dists)
+
+			docDet := parseDetails(doc)
+			if docDet.Error == nil {
+				p.Parameters = getParameters(docDet)
+				p.Datasheets = getDatasheets(docDet)
+				p.Alternatives = getAlternatives(docDet)
+			}
+		}
+
+		fp = append(fp, p)
+	}
+
+	return fp
 }
 
 func getDistPage(prt string) soup.Root {
