@@ -14,10 +14,11 @@ func main() {
 	prt := os.Args[1]
 	ps := getPartInfo(prt)
 	for _, p := range ps {
-		fmt.Println(p.Partnumber)
+		fmt.Println("\n")
+		part.WriteCSV(p)
 	}
 	//part.Print(p)
-	//part.WriteCSV(p)
+	//
 }
 
 func getPartInfo(prt string) []part.Part {
@@ -38,11 +39,7 @@ func getPartInfo(prt string) []part.Part {
 		}
 	}
 
-	fmt.Printf("%v\n", pns)
 	for _, pn := range pns {
-
-		fmt.Println(pn)
-
 		doc := getDistPage(pn)
 		if doc.Error == nil {
 			p.Partnumber = pn
