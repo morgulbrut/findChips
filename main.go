@@ -13,7 +13,8 @@ import (
 func main() {
 	prt := os.Args[1]
 	p := getPartInfo(prt)
-	part.PrintPart(p)
+	part.Print(p)
+	part.WriteCSV(p)
 }
 
 func getPartInfo(prt string) part.Part {
