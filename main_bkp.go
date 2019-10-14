@@ -86,22 +86,22 @@ func getDistributors(doc soup.Root, dists []string) []part.Distributor {
 	for _, r := range res {
 		d := r.Find("h3", "class", "distributor-title")
 		if d.Error == nil {
-		ds := d.FullText()
-		ds = strings.TrimSpace(ds)
-		ds = strings.Split(ds, "\n")[0]
-		if helferlein.Contains(ds, dists) {
-			dist.Name = ds
-			distPartNos := r.FindAll("tr", "class", "row")
-			for _, dpn := range distPartNos {
-				var pn part.Partnumber
-				pn.DistPartnumber = dpn.Attrs()["data-distino"]
-				pn.ManPartnumber = dpn.Attrs()["data-mfrpartnumber"]
-				pn.Desc = dpn.Children()[5].Find("span", "class", "td-description").Text()
-				dist.Partnumbers = append(dist.Partnumbers, pn)
+			ds := d.FullText()
+			ds = strings.TrimSpace(ds)
+			ds = strings.Split(ds, "\n")[0]
+			if helferlein.Contains(ds, dists) {
+				dist.Name = ds
+				distPartNos := r.FindAll("tr", "class", "row")
+				for _, dpn := range distPartNos {
+					var pn part.Partnumber
+					pn.DistPartnumber = dpn.Attrs()["data-distino"]
+					pn.ManPartnumber = dpn.Attrs()["data-mfrpartnumber"]
+					pn.Desc = dpn.Children()[5].Find("span", "class", "td-description").Text()
+					dist.Partnumbers = append(dist.Partnumbers, pn)
+				}
+				ret = append(ret, dist)
 			}
-			ret = append(ret, dist)
 		}
-	}
 	}
 	return ret
 }
@@ -110,12 +110,12 @@ func getParameters(doc soup.Root) []part.Parameter {
 	var ret []part.Parameter
 	det := doc.Find("ul", "class", "part-details-list")
 	if det.Error == nil {
-	for _, d := range det.FindAll("li") {
-		var par part.Parameter
-		par.Param = strings.Trim(d.Find("small").Text(), ":")
-		par.Val = strings.TrimSpace(d.Find("p").Text())
-		ret = append(ret, par)
-	}
+		for _, d := range det.FindAll("li") {
+			var par part.Parameter
+			par.Param = strings.Trim(d.Find("small").Text(), ":")
+			par.Val = strings.TrimSpace(d.Find("p").Text())
+			ret = append(ret, par)
+		}
 	}
 	return ret
 }
