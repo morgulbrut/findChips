@@ -1,0 +1,477 @@
+Rob Lemeire
+Eric Blondeel
+Emiel van Broekhoven
+Christian Dierick
+Ferdinand Engelbeen
+Samuel Furfari
+Georges Geuskens
+Drieu Godefridi
+Jan Jacobs
+Raymond Koch
+Henri A. Masson
+Ferdinand Meeus
+Jean Meeus
+Ernest Mund
+Bart Ooghe
+Jozef Verhulst
+Jean van Vliet
+Appo van der Wiel
+Václav Klaus
+Bjarne Andresen
+Peter Kjær Poulsen
+Johannes Krüger
+NielsSchrøder
+Benoît Rittaud
+Jean-Charles Abbé
+Charles Aubourg
+Jean-Pierre Bardinet
+Bernard Beauzamy
+Jean-Claude Bernier
+Pierre Beslu
+Christian Buson
+Sylvie Brunel
+Jean-Louis Butré
+Patrick de Casanove
+Philippe Colomban
+Vincent Courtillot
+Pierre Darriulat
+Gérard Douet
+Bruno Durieux
+Max Falque
+Patrick Fischer
+François Gauchenot
+Christian Gérondeau
+Francois Gervais
+Bernard Grandchamp
+Gilles Granereau
+Maximilian Hasler
+Philippe de Larminat
+René Laversanne
+Christian Marchal
+Patrick Mellett
+Marc le Menn
+Cédric Moro
+Rémy Prud’homme
+Isabelle Rivals
+Jean Rouquerol
+François Simonet
+Marcel Terrier
+Étienne Vernaz
+Camille Veyres
+Brigitte Van Vliet-Lanoë
+Théa Vogt
+Henri Voron
+Fritz Vahrenholt
+Dietrich Bannert
+Lars Birlenbach
+Klaus Döhler
+Friedrich-Karl Ewert
+HermannHarde
+Werner Kirstein
+Stefan Kröpelin
+Horst-Joachim Lüdecke
+Lothar W. Meyer
+Carl-Otto Weiss
+Jim O’Brien
+Tom Baldwin
+Dr Anthony D. Barry
+Tony J. Carey
+David Horgan
+Seamus Hughes
+Ultan Murphy
+Owen O’Brien
+J. Philip O’Kane
+Peter O’Neill
+Fintan Ryan
+Dr.Brian N. Sweeney
+Sean Tangney
+DavidThompson
+Dr.Edward Walsh
+Uberto Crescenti
+Giuliano Panza
+Alberto Prestininzi
+Franco Prodi
+Franco Battaglia
+Mario Giaccio
+Enrico Miccadei
+Nicola Scafetta
+Antonino Zichichi
+Renato Angelo Ricci
+Aurelio Misiti
+Antonio Brambati
+Cesare Barbieri
+Sergio Bartalucci
+Antonio Bianchini
+Paolo Bonifazi
+Francesca Bozzano
+Marcello Buccolini
+Paolo Budetta
+Monia Calista
+Giovanni Carboni
+Franco Casali
+Giuliano Ceradelli
+Augusta Vittoria Cerutti
+Domenico Corradini
+Fulvio Crisciani
+Carlo Esposito
+Antonio Mario Federico
+Mario Floris
+Gianni Fochi
+Mario Gaeta
+Giuseppe Gambolati
+Rinaldo Genevois
+Carlo Lombardi
+Luigi Marino
+Salvatore Martino
+Paolo Mazzanti
+Adriano Mazzarella
+Carlo Merli
+Alberto Mirandola
+Renzo Mosetti
+Daniela Novembre
+Sergio Ortolani
+Antonio Pasculli
+Ernesto Pedrocchi
+Tommaso Piacentini
+Guido Possa
+Mario Luigi Rainone
+Francesca Quercia
+Giancarlo Ruocco
+Sergio Rusi
+Massimo Salleolini
+Emanuele Scalcione
+Nicola Sciarra
+Leonello Serva
+Luigi Stedile
+Giorgio Trenta
+Gianluca Valensise
+Corrado Venturini
+Franco Zavatti
+Achille Balduzzi
+Claudio Borri
+Pino Cippitelli
+Franco Di Cesare
+Serena Doria
+Enzo Siviero
+Pietro Agostini
+Donato Barone
+Roberto Bonucchi
+Gianfranco Brignoli
+Alessandro Chiaudani
+Antonio Clemente
+Luigi Fressoia
+Sabino Gallo
+Daniela Giannessi
+Roberto Grassi
+Alberto Lagi
+Luciano Lepori
+Roberto Madrigali
+Ludovica Manusardi
+Maria Massullo
+Enrico Matteoli
+Gabriella Mincione
+Massimo Pallotta
+Enzo Pennetta
+Franco Puglia
+Nunzia Radatti
+Vincenzo Romanello
+Alberto Rota
+Massimo Sepielli
+Ugo Spezia
+Emilio Stefani
+Umberto Tirelli
+Roberto Vacca
+Giorgio Bertucelli
+Luciano Biasini
+Giampiero Borrielli
+Antonio Maria Calabrò
+Enrico Colombo
+Stefano De Pieri
+Benedetto De Vivo
+Carlo Del Corso
+Francesco Dellacasa
+Sergio Fontanot
+Umberto Gentili
+Ettore Malpezzi
+Alessandro Martelli
+Umberto Minopoli
+Antonio Panebianco
+Giorgio Prinzi
+Arnaldo Radovix
+Mario Rampichini
+Marco Ricci
+Guus Berkhout
+Maarten van Andel
+André Bijkerk
+PeterBloemers
+Paul M.C. Braat
+Solke Bruin
+Paul Cliteur
+Albert J.H.G. Cloosterman
+Marcel Crok
+David E. Dirkse
+Kees de Groot
+Kees de Lange
+Louw Feenstra
+Frans H. Gortemaker
+Leo Halvers
+Eduard Harinck
+J.R. Hetzler
+Jan F. Holtrop
+A. Huijser
+W. J. (Wouter) Keller
+Jacques van Kerchove
+R.W.J. Kouffeld
+Hans H.J. Labohm
+Kees lePair
+B.G. Linsen
+Pieter Lukkes
+Hugo Matthijssen
+Simon Middelhoek
+J.M. Mulderink
+Rob Nijssen
+Leffert Oldenkamp
+PeterOosterling
+Kees Pieters
+Reynier Pronk
+G.T. Robillard
+Arthur Rörsch
+Don Schäfer
+Frans Schrijver
+Jos de Smit
+Albert Stienstra
+P.J. Strijkert
+Dick Thoenes
+Fred Udo
+J.F. van de Vate
+Frans van den Beemt
+Rutger van Santen
+Barend-Jan Smits
+Hans van Suijdam
+Peter van Toorn
+Jannes J. Verwer
+Henk van der Vorst
+Jaap vander Vuurstde Vries
+Karel Wakker
+Cyril Wentzel
+W.J. Witteman
+Theo Wolters
+Morten Jødal
+Gunnar Abrahamsen
+Stein Storlie Bergsmark
+Reidar Borgstrøm
+Jon Gulbrandsen
+Rögnvaldur Hannesson
+Geir Hasnes
+Hans Konrad Johnsen
+Arnfinn Langeland
+Willy Nerdal
+Ulf Torgny Rock
+Martin Torvald Hovland
+Elen Roaldset
+Hakon Gunnar Rueslatten
+Tom V Segalstad
+Jan-Erik Solheim
+Jørgen Stenersen
+MarekBoinski
+Jaroslaw Grzesik
+Dominik Kolorz
+Ingemar Nordin
+Sture Åström
+Rolf Bergman
+Dr. Lars Bern
+Magnus Cederlöf
+Per-Olof Eriksson
+Dr. Anders Flodin
+David D. Gee
+Hans Jelbring
+Claes Johnson
+Gunnar Juliusson
+Sten Kaijser
+Johan Montelius
+Nils-Axel Mörner
+Gösta Pettersson
+Marian Radetzki
+Peter Stilbs
+Elsa Widding
+Jean-Claude Pont
+Jef Ongena
+Christopher Monckton of Brenchley
+David Bodecott
+D. Q. Bowen
+Michael Brown
+John C. W. Cope
+Richard Courtney
+Isabel Davis
+Howard Dewhirst FGS
+Gregor Dixon FGS
+Roderick Paul Eaton
+Peter Gill
+Gil Gilchrist
+Tim Harper FGS
+Bob Heath
+David A. L. Jenkins
+Chris Matchatte-Downes
+Edward Nealon
+Peter Owen FGS
+Clive Randle
+Michael F. Ridd
+Michael Seymour
+Valentina Zharkova
+Viv Forbes
+Don Andersen
+David Archibald
+Michael Asten
+Jeremy Barlow
+Colin Barton
+Gordon Batt
+Robert M. Bell
+Richard Blayden
+Howard Thomas Brady
+Geoff Brown
+Douglas Buerger
+Mike Bugler
+Ray Carman
+Peter Champness
+Andrew E. Chapman
+Richard Corbett
+Majorie Curtis
+Geoff Derrick
+Aert Driessen
+John A. Earthrowl
+Jeremy K. Ellis
+Matthew J. Fagan
+Rodney Fripp
+Christopher J.S. Game
+Robin George
+David Gibson
+Gavin Gillman
+Hamish Grant
+Lindsay Hackett
+Erl Happ
+John Happs
+John Harrison
+Jarvis Hayman
+Mark Henschke
+Gerhard Hofmann
+Geraint Hughes
+Kevin Kemmis
+Hugh H. Laird
+John Leisten OBE
+Brian Levitan
+Matthew David Linn
+Gerard McGann
+Rodney McKellar
+John McLean
+Ross McLeod
+Finlay MacRitchie
+John Michelmore
+Alan Moran
+Des Moore
+Hugh Morgan
+Clifford Ollier
+Ian Plimer
+Alistair Pope
+Tom Quirk
+Campbell Rankine
+Peter Ridd
+Nigel Rowlands
+Judy Ryan
+Jim Simpson
+Case Smit
+Lee Smith
+Darren Speirs
+Geoffrey Stocker
+Rodney R. Stuart
+R. Symons
+Rustyn Wesley Thomas
+John W. Turner
+Peter Tyrer
+Terrence Vincent
+James Walter
+John Warnock
+Christopher Kenneth Warren
+Neil Wilkins
+P.C. Wilson
+Dr. Thiago Maia
+Jeffrey Ernest Foss
+Reynald Du Berger
+Alain Bonnier
+Ian Clark
+Susan Crockford
+Paul A. Johnston
+Klaus L.E. Kaiser
+Madhav Khandekar
+Kees van Kooten
+Allen MacRae
+Paul MacRae
+Patrick Moore
+Brian R. Pratt
+Peter Salonius
+Ian Semple
+William van Wijngaarden
+NG Young
+Wyss Yim
+Masayuki Hyodo
+Terry Dunleavy MBE
+Deborah Alexander
+Jock Allison
+Barry Brill 
+Doug Edmeades
+Roger High Dewhurst
+Geoffrey G. Duffy
+Joe Fone
+Bryan Leyland
+Gerrit J. van der Lingen
+John Scarry ME (Civil)
+John Sexton
+Philip Strong
+Richard Treadgold
+Habibullo  Abdussamatov
+Rosemary Falcon
+John Ledger
+Don Mingay
+Richard Lindzen
+Ralph B. Alexander
+Anthony J. Armini
+Tim Ball
+Hans-Peter Bär
+James R. Barrante
+Charles G. Battig
+Larry Bell
+Elliott D. Bloom
+Daniel Botkin
+Martin Cornell
+JosephS.D’aleo
+David Deming
+Harold H. Doiron
+John Droz jr
+Freeman Dyson
+Peter Farrell
+Rex Fleming
+Gordon J. Fulks
+TerryGannon
+Ulrich H. Gerlach
+Laurence I. Gould
+Steve Goreham
+David Heald
+Howard C. Hayden
+Wayne P. Kraus
+Patrick J. Michaels
+Pamela Matlack-Klein
+Richard McFarland
+Daniel W. Nebert
+Thomas O’Connor
+Herman A. Pope
+Willem Post
+Phil Robinson
+Willie Soon
+Ronald Stein
+Paul Taylor
+Richard Trzupek
+William B. Walters
+Steven E. Weismantel
+Gregory R. Wrightstone
+David Wojick
+Thomas Wysmuller
+Bob Zybach
